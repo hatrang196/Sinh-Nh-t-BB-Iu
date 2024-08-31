@@ -1,0 +1,129 @@
+/* styles.css */
+
+
+@font-face {
+    font-family: 'UVNSaigon_BI'; /* Tên tùy chỉnh để sử dụng trong CSS */
+    src: url('fonts/UVNSaigon_B.ttf') format('truetype'), /* Đường dẫn đến tệp font chữ */
+         url('fonts/UVNSaigon_BI.ttf') format('truetype'); /* Đường dẫn đến tệp font chữ */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'UVNSaigon_B', sans-serif;
+    background-color: #003366; /* Xanh nước biển */
+    color: white;
+    text-align: center;
+}
+
+.full-screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#countdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa các phần tử theo chiều ngang */
+    z-index: 10;
+}
+
+
+#countdown-text, #countdown {
+    white-space: pre-line; /* Giữ nguyên các ký tự xuống dòng trong nội dung */
+}
+
+#countdown-text {
+    font-family: 'UVNSaigon_BI', cursive; /* Áp dụng font chữ bong bóng */
+    margin-bottom: 20px; /* Khoảng cách phía dưới phần tử #countdown-text */
+    font-size: 3em;
+}
+
+#wish-text {
+    font-size: 2.5em;
+    font-family: 'UVNSaigon_BI', cursive;
+}
+
+#countdown {
+    margin-top: 20px; /* Khoảng cách phía trên phần tử #countdown */
+    font-family: 'UVNSaigon_B', cursive;
+    padding: 20px;
+    width: 150px; /* Chiều rộng */
+    height: 150px; /* Chiều cao */
+    
+}
+
+.countdown {
+    font-size: 5em;
+    border: 5px solid #0033cc; /* Xanh dương */
+    padding: 20px;
+    border-radius: 50%;
+} 
+
+#cake-fire-container {
+    z-index: 20;
+}
+
+#cake-text {
+    font-family: 'UVNSaigon_BI', cursive;
+    position: absolute;
+    top: 5%; /* Cao nhất trên màn hình */
+    left: 50%; /* Căn giữa theo chiều ngang */
+    transform: translateX(-50%); /* Căn giữa chính xác */
+    margin-bottom: 20px;
+    font-size: 3.5em; /* Kích thước văn bản có thể điều chỉnh */
+    
+}  
+
+#fire-img {
+    position: absolute;
+    top: 25%; 
+    left: 50%; /* Căn giữa theo chiều ngang */
+    transform: translateX(-50%);
+    width: 80px;
+    height: auto;
+}
+
+#cake-img{
+    width: 300px;
+    height: auto;
+}
+
+#video-container {
+    z-index: 30;
+}
+
+.pic {
+    position: absolute;
+    width: 150px;
+}
+
+.pic1 {
+    top: 0;
+    left: 0;
+}
+
+.pic2 {
+    top: 0;
+    right: 0;
+}
+
+.pic3 {
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.video {
+    width: 66.67%;
+    height: auto;
+}
